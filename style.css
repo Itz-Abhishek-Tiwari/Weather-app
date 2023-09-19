@@ -1,0 +1,140 @@
+/* Common styles for both mobile and desktop */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282a36;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #bd93f9, #6272a4);
+  color: #f8f8f2;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  color: #8be9fd;
+  height: 60px;
+  margin-right: 16px;
+  background-color: #44475a;
+  flex: 1;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background-color: #44475a;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 16px;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+  color: #50fa7b;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+  color: #8be9fd;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+  color: #bd93f9;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search input {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+
+  .search button {
+    margin-top: 16px;
+  }
+
+  .weather h1 {
+    font-size: 60px;
+  }
+
+  .weather h2 {
+    font-size: 35px;
+  }
+}
+.weather {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    margin: 100px auto 0;
+  }
+}
