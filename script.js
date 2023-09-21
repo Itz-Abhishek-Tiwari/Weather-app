@@ -33,8 +33,8 @@ searchBtn.addEventListener("click", () => {
       } else {
         (temp.textContent = `${Math.floor(data.main.temp)}°C`),
           (city.textContent = `${data.name}, ${data.sys.country}`),
-          (wind.textContent = data.wind.speed),
-          (humidity.textContent = data.main.humidity);
+          (wind.textContent = `${data.wind.speed} KM/h`),
+          (humidity.textContent = `${data.main.humidity}%`);
       }
       if (data.weather[0].main === "Clouds") {
         weatherIcon.src = "images/clouds.png";
